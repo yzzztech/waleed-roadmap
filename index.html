@@ -1,1 +1,159 @@
-REPLACE_WITH_FRESH_FILE
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خارطة تطوير مهني — وليد زيدان</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#e0e0e0;font-family:Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7;overflow-x:hidden}
+.particles{position:fixed;inset:0;pointer-events:none;z-index:0}
+nav{position:sticky;top:0;z-index:100;background:rgba(10,10,26,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06);padding:12px 16px;display:flex;gap:10px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;-webkit-overflow-scrolling:touch}
+nav a{color:#8888a0;text-decoration:none;font-size:14px;transition:color .2s;padding:5px 10px;border-radius:8px;white-space:nowrap;flex-shrink:0}
+nav a:hover{color:#00d4ff;background:rgba(0,212,255,0.06)}
+.container{max-width:1100px;margin:0 auto;padding:16px;position:relative;z-index:1}
+.hero{text-align:center;padding:60px 8px 40px;position:relative}
+.hero::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(600px,80vw);height:min(600px,80vw);background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);pointer-events:none}
+.hero-avatar{width:120px;height:120px;border-radius:50%;border:3px solid rgba(0,212,255,0.4);object-fit:cover;margin-bottom:16px;box-shadow:0 0 40px rgba(0,212,255,0.2)}
+.hero h1{font-size:clamp(28px,6vw,52px);font-weight:900;background:linear-gradient(135deg,#fff 30%,#00d4ff 70%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
+.hero .sub{font-size:clamp(15px,2.5vw,20px);color:#8888a0;max-width:650px;margin:0 auto 20px;padding:0 12px}
+.hero .badge-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.badge{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);border-radius:50px;padding:6px 14px;font-size:13px;color:#00d4ff;white-space:nowrap}
+.section-title{font-size:clamp(22px,4vw,32px);font-weight:700;margin:50px 0 24px;padding-bottom:12px;border-bottom:2px solid rgba(0,212,255,0.15);display:flex;align-items:center;gap:10px}
+.section-title .icon{font-size:clamp(24px,4vw,36px)}
+.summary-card{background:rgba(18,17,59,0.4);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:24px 20px;margin-bottom:40px}
+.summary-card h3{font-size:clamp(18px,3vw,22px);color:#00d4ff;margin-bottom:12px}
+.summary-card p{color:#b0b0c0;font-size:clamp(14px,2vw,16px);line-height:1.9}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:16px;margin-bottom:32px}
+.course-card{background:rgba(18,17,59,0.5);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.06);border-radius:18px;overflow:hidden;transition:transform .3s,border-color .3s;cursor:pointer}
+.course-card:hover{transform:translateY(-4px);border-color:rgba(0,212,255,0.3)}
+.course-card.gold{border-color:rgba(255,215,0,0.25)}
+.course-card.gold:hover{border-color:rgba(255,215,0,0.5);box-shadow:0 0 30px rgba(255,215,0,0.1)}
+.course-header{padding:18px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,0.04)}
+.course-header .rank{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;flex-shrink:0}
+.rank-1{background:linear-gradient(135deg,#ffd700,#c9a000);color:#0a0a1a}
+.rank-2{background:linear-gradient(135deg,#c0c0c0,#808080);color:#0a0a1a}
+.rank-3{background:linear-gradient(135deg,#cd7f32,#8b5a2b);color:#fff}
+.rank-n{background:rgba(0,212,255,0.2);color:#00d4ff}
+.course-header h3{font-size:clamp(16px,2.5vw,20px);color:#fff;line-height:1.3}
+.course-header .provider{font-size:13px;color:#8888a0;margin-top:3px}
+.course-body{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .6s ease,padding .6s ease}
+.course-card.open .course-body{max-height:none;padding:20px;overflow:visible}
+.course-body h4{font-size:15px;color:#00d4ff;margin:12px 0 5px}
+.course-body p,.course-body li{font-size:14px;color:#a0a0b8;line-height:1.8}
+.course-body a{color:#00d4ff;text-decoration:underline;text-underline-offset:3px}
+.course-body a:hover{color:#fff}
+.expand-hint{text-align:center;color:#8888a0;font-size:12px;padding:6px 20px 12px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}
+table{width:100%;border-spacing:0 6px;border-collapse:separate;min-width:500px}
+thead th{text-align:right;color:#8888a0;font-size:13px;font-weight:500;padding:0 12px 8px}
+tbody td{background:rgba(18,17,59,0.3);padding:12px;font-size:14px;color:#c0c0d0}
+tbody tr td:first-child{border-radius:0 10px 10px 0;font-weight:600;color:#fff;white-space:nowrap}
+tbody tr td:last-child{border-radius:10px 0 0 10px}
+tbody tr:hover td{background:rgba(0,212,255,0.06)}
+.footer{text-align:center;padding:50px 20px 30px;color:#555;font-size:13px;border-top:1px solid rgba(255,255,255,0.04);margin-top:40px}
+@keyframes pulse{0%,100%{box-shadow:0 0 20px rgba(255,215,0,0.1)}50%{box-shadow:0 0 40px rgba(255,215,0,0.25)}}
+.pulse{animation:pulse 3s infinite}
+.timeline-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0;padding:16px 0}
+.timeline{display:flex;gap:0;min-width:700px;padding:12px 4px}
+.timeline-item{flex:1;min-width:100px;text-align:center;position:relative;padding:20px 6px 0}
+.timeline-item::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:#00d4ff}
+.timeline-item::after{content:'';position:absolute;top:4px;left:50%;width:100%;height:2px;background:rgba(0,212,255,0.2)}
+.timeline-item:last-child::after{display:none}
+.timeline-item .yr{font-size:11px;color:#8888a0}
+.timeline-item .role{font-size:12px;color:#e0e0e0;font-weight:600;margin-top:4px}
+.timeline-item .co{font-size:11px;color:#00d4ff;margin-top:2px}
+</style></head>
+<body>
+<canvas class="particles" id="particles"></canvas>
+<nav><a href="#summary">الملخص</a><a href="#timeline">📅 المسار</a><a href="#priorities">🥇 الأولويات</a><a href="#supplychain">📦 سلاسل إمداد</a><a href="#techdata">📊 تقنية وبيانات</a><a href="#beyond">🌍 خارج الصندوق</a><a href="#soft">🎤 مهارات</a><a href="#roadmap">🗺️ خارطة ٣ سنوات</a></nav>
+<div class="container">
+<div class="hero">
+  <img class="hero-avatar" src="PHOTO_PLACEHOLDER" alt="وليد زيدان" loading="lazy">
+  <h1>وليد زيدان، ماجستير</h1>
+  <div class="sub">Demand & Supply Planning Manager — Nestlé Nespresso<br>خارطة تطوير مهني • شهادات • دورات • مستقبل</div>
+  <div class="badge-row"><span class="badge">🏭 6+ سنوات FMCG</span><span class="badge">📦 Supply Chain</span><span class="badge">🎓 MSc Engineering Management</span><span class="badge">🇸🇦 Saudi Renaissance</span></div>
+</div>
+<div class="summary-card pulse" id="summary"><h3>🧬 أين أنت الآن — وأين تقدر توصل</h3><p>وليد، أنت في <strong>منطقة قوة نادرة</strong>: خبرة multinational في Nestlé و L'Oréal و Unilever، مع ماجستير في الإدارة الهندسية. الـ gap مش في الخبرة — الـ gap في <strong>الاعتماد الرسمي</strong> لهذي الخبرة. الشهادات اللي تحت بتنقلك من <strong style="color:#00d4ff">Manager</strong> إلى <strong style="color:#ffd700">Director/VP</strong> خلال ٢-٣ سنوات.</p></div>
+
+<h2 class="section-title" id="timeline"><span class="icon">📅</span> المسار المهني</h2>
+<div class="timeline-wrap"><div class="timeline">
+<div class="timeline-item"><div class="yr">٢٠٢٥-الآن</div><div class="role">Demand & Supply Planning Manager</div><div class="co">Nestlé Nespresso</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢٤-٢٥</div><div class="role">Demand & Supply Planner</div><div class="co">L'Oréal</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢٣-٢٤</div><div class="role">HQ Supply & Promo Planner</div><div class="co">L'Oréal Dubai</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢٣</div><div class="role">E-Commerce Ops</div><div class="co">L'Oréal Luxe GCC</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢٢-٢٣</div><div class="role">Key Accounts SC Exec</div><div class="co">L'Oréal KSA</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢١-٢٢</div><div class="role">National Supply Planner</div><div class="co">L'Oréal KSA</div></div>
+<div class="timeline-item"><div class="yr">٢٠٢٠-٢١</div><div class="role">Factory Logistics</div><div class="co">Unilever</div></div>
+</div></div>
+
+<h2 class="section-title" id="priorities"><span class="icon">🥇</span> الأولويات القصوى — Top 3</h2>
+<div class="course-grid">
+<div class="course-card gold open"><div class="course-header"><div class="rank rank-1">1</div><div><h3>APICS CSCP</h3><div class="provider">ASCM — Certified Supply Chain Professional</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.ascm.org/learning-development/certifications/cscp/" target="_blank" rel="noopener">ascm.org/cscp</a></p><h4>📋 ما هو؟</h4><p>المعيار الذهبي العالمي لمحترفي سلاسل الإمداد — معترف به في +100 دولة. يغطي End-to-End Supply Chain كاملاً.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>خبرتك من أرض المصنع (Unilever) إلى التخطيط الاستراتيجي (Nestlé HQ) تصبح مفهومة عالمياً تحت إطار CSCP.</p><h4>📈 الأثر</h4><p>متوسط زيادة الراتب +27% (تقرير ASCM). تؤهلك لـ Supply Chain Director / VP Operations.</p><h4>🔮 المستقبل</h4><p>مرشح مثالي لـ Director في أي multinational بالشرق الأوسط خلال سنتين. تفتح باب استشارات Big 4.</p><p><strong>المدة:</strong> ٤-٦ أشهر | <strong>التكلفة:</strong> ~$2,000 | أونلاين + اختبار</p></div></div>
+<div class="course-card gold open"><div class="course-header"><div class="rank rank-2">2</div><div><h3>PMP</h3><div class="provider">PMI — Project Management Professional</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank" rel="noopener">pmi.org/pmp</a></p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>قُدت مشاريع حقيقية: Period After Opening، تحول E-Commerce ATP، إعادة تصميم layouts — كلها PMP material.</p><h4>📈 الأثر</h4><p>حاملو PMP في الشرق الأوسط +22% راتب. تؤهلك لـ Program Manager، PMO Lead.</p><h4>🔮 المستقبل</h4><p>تفتح لك أي صناعة — ليس فقط FMCG.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$555</p></div></div>
+<div class="course-card gold open"><div class="course-header"><div class="rank rank-3">3</div><div><h3>MITx MicroMasters in SCM</h3><div class="provider">MIT — Massachusetts Institute of Technology</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://micromasters.mit.edu/scm/" target="_blank" rel="noopener">micromasters.mit.edu/scm</a></p><h4>📋 ما هو؟</h4><p>٥ مواد من MIT — Analytics، Design، Dynamics، Technology، Leadership. تعادل نصف ماجستير.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>كمهندس صناعي، التحليل الكمي جزء منك. AI + SCM هو مستقبل مجالك.</p><h4>📈 الأثر</h4><p>اسم MIT على السيرة = تحول فوري. تؤهلك لـ Head of Supply Chain Analytics.</p><h4>🔮 المستقبل</h4><p>MIT + CSCP = من أندر المواهب في الخليج. McKinsey و BCG يبحثون عن هذي التركيبة.</p><p><strong>المدة:</strong> ٦-١٨ شهر | <strong>التكلفة:</strong> ~$1,500 | أونلاين</p></div></div></div>
+
+<h2 class="section-title" id="supplychain"><span class="icon">📦</span> سلاسل إمداد وعمليات</h2>
+<div class="course-grid">
+<div class="course-card"><div class="course-header"><div class="rank rank-n">4</div><div><h3>Six Sigma Black Belt</h3><div class="provider">ASQ / IASSC</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://asq.org/cert/six-sigma-black-belt" target="_blank" rel="noopener">asq.org/cssbb</a></p><h4>📋 ما هو؟</h4><p>أعلى مستوى في إدارة الجودة. DMAIC، statistical analysis، process optimization.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>عندك WCM في Unilever. تخفيض refusals من 13% إلى &lt;1% = Six Sigma project نموذجي.</p><h4>📈 الأثر</h4><p>تثبت أنك تقود تحسينات بملايين الدولارات. Operational Excellence Director.</p><h4>🔮 المستقبل</h4><p>Black Belt + CSCP = جاهز لقيادة Supply Chain Transformation.</p><p><strong>المدة:</strong> ٤-٨ أشهر | <strong>التكلفة:</strong> ~$500-1,500</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">5</div><div><h3>SAP IBP Certification</h3><div class="provider">SAP</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://learning.sap.com/" target="_blank" rel="noopener">learning.sap.com</a></p><h4>📋 ما هو؟</h4><p>شهادة SAP الرسمية في Integrated Business Planning.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>تستخدم SAP يومياً — الشهادة تحولك من مستخدم إلى خبير معتمد. تصبح مرجع للمنطقة.</p><h4>📈 الأثر</h4><p>معتمدو SAP في الشرق الأوسط نادرون ويُدفع لهم premium.</p><h4>🔮 المستقبل</h4><p>SAP IBP + CSCP = الخبير المطلوب لأي SAP implementation في الخليج.</p><p><strong>المدة:</strong> ٢-٣ أشهر | <strong>التكلفة:</strong> ~$550</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div></div>
+
+<h2 class="section-title" id="techdata"><span class="icon">📊</span> تقنية وبيانات</h2>
+<div class="course-grid">
+<div class="course-card"><div class="course-header"><div class="rank rank-n">6</div><div><h3>Power BI Data Analyst (PL-300)</h3><div class="provider">Microsoft</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/" target="_blank" rel="noopener">Microsoft PL-300</a></p><h4>📋 ما هو؟</h4><p>شهادة Microsoft الرسمية في تحليل البيانات وبناء dashboards احترافية.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>تتعامل مع أرقام يومياً. Power BI ينقلك من Excel إلى قصص بيانات للإدارة العليا.</p><h4>📈 الأثر</h4><p>قادة SCM اللي يقدمون Dashboards يترقون أسرع — يتحدثون لغة C-level.</p><h4>🔮 المستقبل</h4><p>Power BI + CSCP = مرشح طبيعي لـ S&OP Director أو Head of Analytics.</p><p><strong>المدة:</strong> ٢-٤ أشهر | <strong>التكلفة:</strong> ~$165</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">7</div><div><h3>Python for Supply Chain Analytics</h3><div class="provider">Coursera / DataCamp</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.coursera.org/learn/supply-chain-analytics" target="_blank" rel="noopener">Coursera: Supply Chain Analytics</a></p><h4>📋 ما هو؟</h4><p>Python لتطبيقات SCM: forecasting، inventory optimization، automation.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>كمهندس صناعي عندك أساس كمي قوي. Python يضيف نماذج تنبؤية خاصة بك.</p><h4>📈 الأثر</h4><p>محترفو SCM + Python نادرون — رواتب استثنائية.</p><h4>🔮 المستقبل</h4><p>في 2030، كل supply chain leader يحتاج AI literacy. أنت تسبقهم.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$50-300</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div></div>
+
+<h2 class="section-title" id="beyond"><span class="icon">🌍</span> خارج الصندوق — بناءً على اهتماماتك</h2>
+<div class="course-grid">
+<div class="course-card"><div class="course-header"><div class="rank rank-n">8</div><div><h3>Cornell Certificate in Hospitality Management</h3><div class="provider">Cornell University</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://ecornell.cornell.edu/certificates/hospitality-and-foodservice-management/" target="_blank" rel="noopener">ecornell.cornell.edu/hospitality</a></p><h4>📋 ما هو؟</h4><p>برنامج من أفضل جامعة ضيافة في العالم. إدارة فنادق، مطاعم، خدمة عملاء.</p><h4>💡 لماذا؟</h4><p>ذكرت Hospitality في اهتماماتك. السعودية تستثمر تريليونات في السياحة. SCM + Hospitality = موهبة نادرة.</p><h4>📈 الأثر</h4><p>مدير سلاسل إمداد في Hilton، Marriott، البحر الأحمر، نيوم.</p><h4>🔮 المستقبل</h4><p>الطلب على قادة SCM بخلفية سياحية سينفجر مع رؤية 2030.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$3,600 | أونلاين</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">9</div><div><h3>FIFA/CIES Sports Management</h3><div class="provider">FIFA + CIES</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.cies.ch/education/fifa-master/" target="_blank" rel="noopener">cies.ch/education/fifa-master</a></p><h4>📋 ما هو؟</h4><p>برنامج معتمد من FIFA: قانون رياضي، تسويق، إدارة فعاليات، تمويل.</p><h4>💡 لماذا؟</h4><p>ذكرت Sport Sector. 2034: كأس العالم في السعودية. الملاعب تحتاج قادة SCM.</p><h4>📈 الأثر</h4><p>قادة SCM في القطاع الرياضي قلة نادرة. مع رؤية 2030 الطلب سينفجر.</p><h4>🔮 المستقبل</h4><p>2034: تقود supply chain لكأس العالم في بلدك.</p><p><strong>المدة:</strong> ١-٢ سنة | <strong>التكلفة:</strong> تختلف حسب الجامعة</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">10</div><div><h3>Stanford LEAD — Entrepreneurship</h3><div class="provider">Stanford Graduate School of Business</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.gsb.stanford.edu/exec-ed/programs/stanford-lead" target="_blank" rel="noopener">gsb.stanford.edu/lead</a></p><h4>📋 ما هو؟</h4><p>برنامج تنفيذي: ريادة الأعمال، الابتكار، القيادة، التفكير التصميمي.</p><h4>💡 لماذا؟</h4><p>ذكرت Entrepreneurship و Consultation. Stanford يعطيك الإطار + شبكة علاقات عالمية.</p><h4>📈 الأثر</h4><p>تؤهلك لتأسيس مشروعك أو COO/VP في شركة ناشئة.</p><h4>🔮 المستقبل</h4><p>Stanford + خبرتك = مؤسس مثالي لـ supply chain tech startup.</p><p><strong>المدة:</strong> ١٢ شهر | <strong>التكلفة:</strong> ~$19,000</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">11</div><div><h3>Cambridge Sustainability Leadership</h3><div class="provider">University of Cambridge — CISL</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.cisl.cam.ac.uk/education" target="_blank" rel="noopener">cisl.cam.ac.uk/education</a></p><h4>📋 ما هو؟</h4><p>برامج قيادة الاستدامة من كامبريدج: اقتصاد دائري، سلاسل إمداد خضراء.</p><h4>💡 كيف يتقاطع مع مسارك؟</h4><p>عندك شهادة Sustainability وقُدت مبادرة لتقليل الهدر. هذا امتداد طبيعي.</p><h4>📈 الأثر</h4><p>كل FMCG تبحث عن قادة استدامة. أنت جاهز.</p><h4>🔮 المستقبل</h4><p>Head of Sustainable Supply Chain — منصب المستقبل.</p><p><strong>المدة:</strong> ٢-٨ أسابيع | <strong>التكلفة:</strong> ~£2,500-5,000</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div></div>
+
+<h2 class="section-title" id="soft"><span class="icon">🎤</span> مهارات استراتيجية</h2>
+<div class="course-grid">
+<div class="course-card"><div class="course-header"><div class="rank rank-n">12</div><div><h3>Harvard Negotiation Mastery</h3><div class="provider">Harvard Business School Online</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://online.hbs.edu/courses/negotiation-mastery/" target="_blank" rel="noopener">online.hbs.edu/negotiation</a></p><p>تتفاوض يومياً. منهجية هارفارد تحولك من مفاوض جيد إلى مفاوض استراتيجي.</p><p><strong>المدة:</strong> ٨ أسابيع | <strong>التكلفة:</strong> ~$1,850 | أونلاين</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">13</div><div><h3>INSEAD Corporate Governance</h3><div class="provider">INSEAD</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.insead.edu/executive-education/corporate-governance" target="_blank" rel="noopener">insead.edu/governance</a></p><p>يؤهلك لمجالس الإدارات. رؤية 2030 تطلب حوكمة — والأعضاء المؤهلون نادرون.</p><p><strong>المدة:</strong> ١-٢ أسبوع | <strong>التكلفة:</strong> ~€8,000-12,000</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">14</div><div><h3>Oxford Futures & Foresight</h3><div class="provider">Oxford Saïd Business School</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.sbs.ox.ac.uk/programmes/oxford-scenarios-programme" target="_blank" rel="noopener">sbs.ox.ac.uk/scenarios</a></p><p>الدراسات المستقبلية — بناء سيناريوهات استراتيجية. ذكرت Strategic Planning في اهتماماتك.</p><p><strong>المدة:</strong> ٥ أيام | <strong>التكلفة:</strong> ~£6,500</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">15</div><div><h3>CMC — Certified Management Consultant</h3><div class="provider">ICMCI</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.cmc-global.org/" target="_blank" rel="noopener">cmc-global.org</a></p><p>الاعتماد العالمي للمستشارين. خبرتك في top 3 FMCG = مستشار جاهز.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> حسب البلد</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div>
+<div class="course-card"><div class="course-header"><div class="rank rank-n">16</div><div><h3>Toastmasters + Executive Presence</h3><div class="provider">Toastmasters / INSEAD</div></div></div>
+<div class="course-body"><h4>🔗 الرابط</h4><p><a href="https://www.toastmasters.org/" target="_blank" rel="noopener">toastmasters.org</a></p><p>للوصول لـ Director+ تحتاج حضور تنفيذي. Toastmasters يعطيك التطبيق العملي الأسبوعي.</p><p><strong>المدة:</strong> مستمر | <strong>التكلفة:</strong> ~$45/6 أشهر</p></div><div class="expand-hint">👆 اضغط للتوسيع</div></div></div>
+
+<h2 class="section-title" id="roadmap"><span class="icon">🗺️</span> خارطة الطريق — ٣ سنوات</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>السنة</th><th>الشهادات المستهدفة</th><th>المنصب المتوقع</th></tr></thead>
+<tbody>
+<tr><td>٢٠٢٦-٢٧</td><td>CSCP + PMP + Power BI</td><td>Associate Director</td></tr>
+<tr><td>٢٠٢٧-٢٨</td><td>MITx + Six Sigma Black Belt</td><td>Supply Chain Director</td></tr>
+<tr><td>٢٠٢٨-٢٩</td><td>SAP IBP + Harvard + INSEAD Gov</td><td>VP Operations / Board</td></tr>
+<tr><td>موازي</td><td>Python + Hospitality/Sports</td><td>استشارات / ريادة أعمال</td></tr>
+</tbody>
+</table></div>
+<div class="footer"><p>أُعد بواسطة Hermes Agent • مايو ٢٠٢٦</p><p style="margin-top:8px">"خير الناس أنفعهم للناس"</p></div>
+</div>
+<script>
+const c=document.getElementById('particles'),x=c.getContext('2d');
+c.width=window.innerWidth;c.height=window.innerHeight;
+const p=Array.from({length:50},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.5+.3,a:Math.random()*Math.PI*2,s:Math.random()*.3+.1,o:Math.random()*.3+.1}));
+function A(){x.clearRect(0,0,c.width,c.height);p.forEach(pt=>{pt.a+=pt.s*.01;pt.y-=pt.s*.3;if(pt.y<-10)pt.y=c.height+10;const o=pt.o+Math.sin(pt.a)*.15;x.beginPath();x.arc(pt.x,pt.y,pt.r,0,Math.PI*2);x.fillStyle=`rgba(0,212,255,${o})`;x.fill()});requestAnimationFrame(A)}A();
+window.addEventListener('resize',()=>{c.width=window.innerWidth;c.height=window.innerHeight});
+document.querySelectorAll('nav a').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));t&&t.scrollIntoView({behavior:'smooth',block:'start'})})});
+document.querySelectorAll('.course-card').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('open')));
+document.querySelectorAll('.course-card.gold').forEach(c=>c.classList.add('open'));
+</script>
+</body>
+</html>
