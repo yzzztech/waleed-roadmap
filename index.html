@@ -37,7 +37,7 @@ nav a:hover{color:#00d4ff;background:rgba(0,212,255,0.06)}
 .course-header h3{font-size:clamp(16px,2.5vw,20px);color:#fff;line-height:1.3}
 .course-header .provider{font-size:13px;color:#8888a0;margin-top:3px}
 .course-body{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .6s ease,padding .6s ease}
-.course-card.open .course-body{max-height:5000px;padding:20px}
+.course-card.open .course-body{max-height:none;padding:20px;overflow:visible}
 .course-body h4{font-size:15px;color:#00d4ff;margin:12px 0 5px}
 .course-body p,.course-body li{font-size:14px;color:#a0a0b8;line-height:1.8}
 .course-body li{margin-bottom:4px;list-style:'▸ ';padding-right:6px}
@@ -70,6 +70,7 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 <canvas class="particles" id="particles"></canvas>
 <nav>
   <a href="#summary">الملخص</a>
+  <a href="#timeline">📅 المسار</a>
   <a href="#priorities">🥇 الأولويات</a>
   <a href="#supplychain">📦 سلاسل إمداد</a>
   <a href="#techdata">📊 تقنية وبيانات</a>
@@ -94,7 +95,7 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
   <p>وليد، أنت في <strong>منطقة قوة نادرة</strong>: خبرة multinational في Nestlé و L'Oréal و Unilever، مع ماجستير في الإدارة الهندسية. الـ gap مش في الخبرة — الـ gap في <strong>الاعتماد الرسمي</strong> لهذي الخبرة. الشهادات اللي تحت بتنقلك من <strong style="color:#00d4ff">Manager</strong> إلى <strong style="color:#ffd700">Director/VP</strong> خلال ٢-٣ سنوات.</p>
 </div>
 
-<h2 class="section-title"><span class="icon">📅</span> المسار المهني</h2>
+<h2 class="section-title" id="timeline"><span class="icon">📅</span> المسار المهني</h2>
 <div class="timeline-wrap">
 <div class="timeline">
   <div class="timeline-item"><div class="yr">٢٠٢٥-الآن</div><div class="role">Demand & Supply Planning Manager</div><div class="co">Nestlé Nespresso</div></div>
@@ -107,30 +108,38 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 </div>
 </div>
 
-<h2 class="section-title" id="priorities"><span class="icon">🥇</span> الأولويات القصوى</h2>
+<h2 class="section-title" id="priorities"><span class="icon">🥇</span> الأولويات القصوى — Top 3</h2>
 <div class="course-grid">
   <div class="course-card gold open">
     <div class="course-header"><div class="rank rank-1">1</div><div><h3>APICS CSCP</h3><div class="provider">ASCM — المعيار الذهبي لسلاسل الإمداد</div></div></div>
     <div class="course-body">
-      <p><a href="https://www.ascm.org/learning-development/certifications/cscp/" target="_blank">ascm.org/cscp</a></p>
-      <p>يغطي End-to-End Supply Chain. معترف به في +100 دولة. متوسط زيادة الراتب +27%. مع CSCP + خبرتك → Supply Chain Director خلال سنتين.</p>
-      <p><strong>المدة:</strong> ٤-٦ أشهر | <strong>التكلفة:</strong> ~$2,000</p>
+      <h4>🔗 الرابط</h4><p><a href="https://www.ascm.org/learning-development/certifications/cscp/" target="_blank">ascm.org/cscp</a></p>
+      <h4>📋 ما هو؟</h4><p>يغطي End-to-End Supply Chain كاملاً. معترف به في +100 دولة وعند كل FMCG الكبرى.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>خبرتك من أرض المصنع إلى HQ التخطيط تصبح مفهومة تحت إطار CSCP عالمياً. كل أدوارك السابقة مغطاة.</p>
+      <h4>📈 الأثر</h4><p>متوسط +27% زيادة راتب. تؤهلك لـ Director/VP. تختصر 3-5 سنوات.</p>
+      <h4>🔮 المستقبل</h4><p>مرشح مثالي لـ Supply Chain Director في أي multinational بالشرق الأوسط. تفتح باب استشارات Big 4.</p>
+      <p><strong>المدة:</strong> ٤-٦ أشهر | <strong>التكلفة:</strong> ~$2,000 | أونلاين + اختبار</p>
     </div>
   </div>
   <div class="course-card gold open">
-    <div class="course-header"><div class="rank rank-2">2</div><div><h3>PMP — Project Management Professional</h3><div class="provider">PMI</div></div></div>
+    <div class="course-header"><div class="rank rank-2">2</div><div><h3>PMP</h3><div class="provider">PMI — Project Management Professional</div></div></div>
     <div class="course-body">
-      <p><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">pmi.org/pmp</a></p>
-      <p>مشاريعك في L'Oréal و Nestlé تثبت أهليتك — PMP يختمها رسمياً. حاملو PMP في الشرق الأوسط +22% راتب.</p>
+      <h4>🔗 الرابط</h4><p><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">pmi.org/pmp</a></p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>قُدت مشاريع حقيقية: Period After Opening، تحول E-Commerce ATP، إعادة تصميم layouts — كلها PMP material.</p>
+      <h4>📈 الأثر</h4><p>حاملو PMP في الشرق الأوسط +22% راتب. تؤهلك لـ Program Manager، PMO Lead، Transformation Director.</p>
+      <h4>🔮 المستقبل</h4><p>تقود مبادرات التحول الرقمي والاستدامة على مستوى المنطقة. تفتح لك أي صناعة.</p>
       <p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$555</p>
     </div>
   </div>
   <div class="course-card gold open">
-    <div class="course-header"><div class="rank rank-3">3</div><div><h3>MITx MicroMasters in Supply Chain Management</h3><div class="provider">MIT</div></div></div>
+    <div class="course-header"><div class="rank rank-3">3</div><div><h3>MITx MicroMasters in SCM</h3><div class="provider">MIT — Massachusetts Institute of Technology</div></div></div>
     <div class="course-body">
-      <p><a href="https://micromasters.mit.edu/scm/" target="_blank">micromasters.mit.edu/scm</a></p>
-      <p>٥ مواد من MIT تعادل نصف ماجستير. AI + SCM = مستقبل مجالك. اسم MIT على السيرة = تحول فوري.</p>
-      <p><strong>المدة:</strong> ٦-١٨ شهر | <strong>التكلفة:</strong> ~$1,500 | <strong>أونلاين</strong></p>
+      <h4>🔗 الرابط</h4><p><a href="https://micromasters.mit.edu/scm/" target="_blank">micromasters.mit.edu/scm</a></p>
+      <h4>📋 ما هو؟</h4><p>٥ مواد من MIT تعادل نصف ماجستير. يغطي Analytics، Design، Dynamics، Technology، Leadership.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>مهندس صناعي أصلاً — التحليل الكمي جزء منك. AI + SCM هو مستقبل مجالك وNestlé تستثمر فيه مليارات.</p>
+      <h4>📈 الأثر</h4><p>اسم MIT على السيرة = تحول فوري. تؤهلك لـ Head of Supply Chain Analytics.</p>
+      <h4>🔮 المستقبل</h4><p>MIT + CSCP = من أندر المواهب في الخليج. McKinsey و BCG يبحثون عن هذي التركيبة.</p>
+      <p><strong>المدة:</strong> ٦-١٨ شهر | <strong>التكلفة:</strong> ~$1,500 | أونلاين</p>
     </div>
   </div>
 </div>
@@ -139,11 +148,27 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 <div class="course-grid">
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">4</div><div><h3>Six Sigma Black Belt</h3><div class="provider">ASQ / IASSC</div></div></div>
-    <div class="course-body"><p><a href="https://asq.org/cert/six-sigma-black-belt" target="_blank">asq.org/cssbb</a></p><p>امتداد طبيعي لخبرتك في WCM في Unilever. تخفيض refusals من 13% إلى <1% = مشروع Six Sigma نموذجي. يؤهلك لـ Operational Excellence Director.</p><p><strong>المدة:</strong> ٤-٨ أشهر | <strong>التكلفة:</strong> ~$500-1,500</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://asq.org/cert/six-sigma-black-belt" target="_blank">asq.org/cssbb</a></p>
+      <h4>📋 ما هو؟</h4><p>أعلى مستوى في إدارة الجودة والتحسين المستمر. DMAIC، statistical analysis، process optimization.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>عندك WCM في Unilever — Black Belt امتداد طبيعي. تخفيض refusals من 13% إلى <1% = Six Sigma project نموذجي.</p>
+      <h4>📈 الأثر</h4><p>تثبت أنك تقود تحسينات بملايين الدولارات. يسرّع ترقيتك لـ Operational Excellence Director.</p>
+      <h4>🔮 المستقبل</h4><p>Black Belt + CSCP = جاهز لقيادة Supply Chain Transformation في أي FMCG.</p>
+      <p><strong>المدة:</strong> ٤-٨ أشهر | <strong>التكلفة:</strong> ~$500-1,500</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">5</div><div><h3>SAP IBP Certification</h3><div class="provider">SAP</div></div></div>
-    <div class="course-body"><p><a href="https://learning.sap.com/" target="_blank">learning.sap.com</a></p><p>تستخدم SAP يومياً — الشهادة تحولك من مستخدم لخبير معتمد. نادر في الخليج ومطلوب.</p><p><strong>المدة:</strong> ٢-٣ أشهر | <strong>التكلفة:</strong> ~$550</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://learning.sap.com/" target="_blank">learning.sap.com</a></p>
+      <h4>📋 ما هو؟</h4><p>شهادة SAP الرسمية في Integrated Business Planning.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>تستخدم SAP يومياً — الشهادة تحولك من مستخدم متمكن إلى خبير معتمد. تصبح مرجع للمنطقة.</p>
+      <h4>📈 الأثر</h4><p>معتمدو SAP في الشرق الأوسط نادرون ويُدفع لهم premium كبير.</p>
+      <h4>🔮 المستقبل</h4><p>SAP IBP + CSCP = الخبير المطلوب لأي SAP implementation في الخليج.</p>
+      <p><strong>المدة:</strong> ٢-٣ أشهر | <strong>التكلفة:</strong> ~$550</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
 </div>
 
@@ -151,11 +176,27 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 <div class="course-grid">
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">6</div><div><h3>Power BI Data Analyst (PL-300)</h3><div class="provider">Microsoft</div></div></div>
-    <div class="course-body"><p><a href="https://learn.microsoft.com/credentials/data-analyst-associate" target="_blank">Microsoft PL-300</a></p><p>تنقلك من Excel sheets لـ Dashboards احترافية. تتحدث لغة C-level.</p><p><strong>المدة:</strong> ٢-٤ أشهر | <strong>التكلفة:</strong> ~$165</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://learn.microsoft.com/credentials/data-analyst-associate" target="_blank">Microsoft PL-300</a></p>
+      <h4>📋 ما هو؟</h4><p>شهادة Microsoft الرسمية في تحليل البيانات وبناء dashboards احترافية.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>تتعامل مع أرقام يومياً — Demand forecasting، inventory levels. Power BI ينقلك من Excel إلى قصص بيانات للإدارة العليا.</p>
+      <h4>📈 الأثر</h4><p>قادة SCM اللي يقدمون Dashboards يترقون أسرع — يتحدثون لغة C-level.</p>
+      <h4>🔮 المستقبل</h4><p>Power BI + CSCP = مرشح طبيعي لـ S&OP Director أو Head of Analytics.</p>
+      <p><strong>المدة:</strong> ٢-٤ أشهر | <strong>التكلفة:</strong> ~$165</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
   <div class="course-card">
-    <div class="course-header"><div class="rank rank-n">7</div><div><h3>Python for Supply Chain Analytics</h3><div class="provider">Coursera / DataCamp</div></div></div>
-    <div class="course-body"><p><a href="https://www.coursera.org/learn/supply-chain-analytics" target="_blank">Coursera SCM Analytics</a></p><p>كمهندس صناعي، عندك الأساس. Python يضيف forecasting algorithms و automation. مزيج SCM + Python نادر جداً.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$50-300</p></div>
+    <div class="course-header"><div class="rank rank-n">7</div><div><h3>Python for Supply Chain Analytics</h3><div class="provider">Coursera / DataCamp / MITx</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.coursera.org/learn/supply-chain-analytics" target="_blank">Coursera SCM Analytics</a></p>
+      <h4>📋 ما هو؟</h4><p>Python لتطبيقات سلاسل الإمداد: forecasting algorithms، inventory optimization، automation.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>كمهندس صناعي عندك أساس كمي قوي. Python يعطيك القوة لبناء نماذج تنبؤية خاصة بك.</p>
+      <h4>📈 الأثر</h4><p>محترفو SCM + Python نادرون جداً — رواتب استثنائية.</p>
+      <h4>🔮 المستقبل</h4><p>في 2030، كل supply chain leader يحتاج literacy في AI/analytics. أنت تسبقهم.</p>
+      <p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$50-300</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
 </div>
 
@@ -163,29 +204,101 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 <div class="course-grid">
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">8</div><div><h3>Cornell Certificate in Hospitality Management</h3><div class="provider">Cornell University</div></div></div>
-    <div class="course-body"><p><a href="https://ecornell.cornell.edu/hospitality" target="_blank">ecornell.cornell.edu</a></p><p>ذكرت Hospitality في اهتماماتك. السعودية تستثمر تريليونات في السياحة. SCM + Hospitality = موهبة نادرة.</p><p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$3,600</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://ecornell.cornell.edu/hospitality" target="_blank">ecornell.cornell.edu</a></p>
+      <h4>📋 ما هو؟</h4><p>برنامج من أفضل جامعة ضيافة في العالم. إدارة فنادق، مطاعم، وخدمة عملاء.</p>
+      <h4>💡 لماذا؟</h4><p>ذكرت Hospitality في اهتماماتك. Nestlé/Nespresso شراكات ضخمة مع قطاع الضيافة. SCM + Hospitality = موهبة نادرة.</p>
+      <h4>📈 الأثر</h4><p>تفتح مساراً موازياً: مدير سلاسل إمداد في Hilton، Marriott، البحر الأحمر، نيوم.</p>
+      <h4>🔮 المستقبل</h4><p>السعودية تستثمر تريليونات في السياحة. الطلب على قادة SCM بخلفية سياحية سينفجر.</p>
+      <p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> ~$3,600 | أونلاين</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">9</div><div><h3>FIFA/CIES Sports Management</h3><div class="provider">FIFA + CIES</div></div></div>
-    <div class="course-body"><p><a href="https://www.cies.ch/en/education/fifa-master/" target="_blank">cies.ch/fifa-master</a></p><p>ذكرت Sports Sector. 2034: كأس العالم في السعودية. قادة SCM في الرياضة قلة — أنت تملأ الفراغ.</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.cies.ch/en/education/fifa-master/" target="_blank">cies.ch/fifa-master</a></p>
+      <h4>📋 ما هو؟</h4><p>برنامج معتمد من FIFA: قانون رياضي، تسويق، إدارة فعاليات، تمويل.</p>
+      <h4>💡 لماذا؟</h4><p>ذكرت Sport Sector. كأس العالم 2034 في السعودية. الملاعب والفعاليات تحتاج قادة SCM.</p>
+      <h4>📈 الأثر</h4><p>قادة SCM في القطاع الرياضي قلة نادرة. مع رؤية 2030 الطلب سينفجر.</p>
+      <h4>🔮 المستقبل</h4><p>2034: تقود supply chain لكأس العالم في بلدك.</p>
+      <p><strong>المدة:</strong> ١-٢ سنة | <strong>التكلفة:</strong> تختلف</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
   <div class="course-card">
-    <div class="course-header"><div class="rank rank-n">10</div><div><h3>Stanford LEAD — Entrepreneurship</h3><div class="provider">Stanford GSB</div></div></div>
-    <div class="course-body"><p><a href="https://www.gsb.stanford.edu/stanford-lead" target="_blank">gsb.stanford.edu/lead</a></p><p>ريادة الأعمال والابتكار. مع خبرتك، أنت مؤسس مثالي لـ supply chain tech startup.</p><p><strong>المدة:</strong> ١٢ شهر | <strong>التكلفة:</strong> ~$19,000</p></div>
+    <div class="course-header"><div class="rank rank-n">10</div><div><h3>Stanford LEAD — Entrepreneurship</h3><div class="provider">Stanford Graduate School of Business</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.gsb.stanford.edu/stanford-lead" target="_blank">gsb.stanford.edu/lead</a></p>
+      <h4>📋 ما هو؟</h4><p>برنامج تنفيذي: ريادة الأعمال، الابتكار، القيادة، التفكير التصميمي.</p>
+      <h4>💡 لماذا؟</h4><p>ذكرت Entrepreneurship و Consultation. Stanford يعطيك الإطار + شبكة علاقات عالمية.</p>
+      <h4>📈 الأثر</h4><p>تؤهلك لتأسيس مشروعك أو الانضمام لشركة ناشئة كـ COO/VP Operations.</p>
+      <h4>🔮 المستقبل</h4><p>Stanford LEAD + خبرتك = مؤسس مثالي لـ supply chain tech startup في الشرق الأوسط.</p>
+      <p><strong>المدة:</strong> ١٢ شهر | <strong>التكلفة:</strong> ~$19,000 | أونلاين + حضوري</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
   <div class="course-card">
     <div class="course-header"><div class="rank rank-n">11</div><div><h3>Cambridge Sustainability Leadership</h3><div class="provider">University of Cambridge — CISL</div></div></div>
-    <div class="course-body"><p><a href="https://www.cisl.cam.ac.uk/education" target="_blank">cisl.cam.ac.uk</a></p><p>عندك شهادة Sustainability. كل FMCG اليوم تبحث عن قادة استدامة. Head of Sustainable Supply Chain — منصب المستقبل.</p></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.cisl.cam.ac.uk/education" target="_blank">cisl.cam.ac.uk</a></p>
+      <h4>📋 ما هو؟</h4><p>برامج قيادة الاستدامة من كامبريدج: اقتصاد دائري، سلاسل إمداد خضراء.</p>
+      <h4>💡 كيف يتقاطع مع مسارك؟</h4><p>عندك شهادة Sustainability وقُدت مبادرة Period After Opening لتقليل الهدر. هذا امتداد طبيعي.</p>
+      <h4>📈 الأثر</h4><p>كل FMCG تبحث عن قادة استدامة. أنت جاهز.</p>
+      <h4>🔮 المستقبل</h4><p>Head of Sustainable Supply Chain — منصب المستقبل.</p>
+      <p><strong>المدة:</strong> ٢-٨ أسابيع | <strong>التكلفة:</strong> ~£2,500-5,000</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
   </div>
 </div>
 
 <h2 class="section-title" id="soft"><span class="icon">🎤</span> مهارات استراتيجية</h2>
 <div class="course-grid">
-  <div class="course-card"><div class="course-header"><div class="rank rank-n">12</div><div><h3>Harvard Negotiation Mastery</h3><div class="provider">Harvard Business School</div></div></div><div class="course-body"><p><a href="https://online.hbs.edu/courses/negotiation-mastery/" target="_blank">online.hbs.edu/negotiation</a></p><p>تتفاوض يومياً — منهجية هارفارد تحولك لـ مفاوض استراتيجي. ٨ أسابيع ~$1,850.</p></div></div>
-  <div class="course-card"><div class="course-header"><div class="rank rank-n">13</div><div><h3>INSEAD Corporate Governance</h3><div class="provider">INSEAD</div></div></div><div class="course-body"><p><a href="https://www.insead.edu/executive-education/corporate-governance" target="_blank">insead.edu/governance</a></p><p>يؤهلك لمجالس الإدارات. رؤية 2030 تطلب حوكمة — وأعضاء المجالس المؤهلون نادرون.</p></div></div>
-  <div class="course-card"><div class="course-header"><div class="rank rank-n">14</div><div><h3>Oxford Futures & Foresight</h3><div class="provider">Oxford Saïd</div></div></div><div class="course-body"><p><a href="https://www.sbs.ox.ac.uk/oxford-scenarios-programme" target="_blank">sbs.ox.ac.uk/scenarios</a></p><p>الدراسات المستقبلية — بناء السيناريوهات الاستراتيجية. ٥ أيام ~£6,500.</p></div></div>
-  <div class="course-card"><div class="course-header"><div class="rank rank-n">15</div><div><h3>CMC — Certified Management Consultant</h3><div class="provider">ICMCI</div></div></div><div class="course-body"><p><a href="https://www.cmc-global.org/" target="_blank">cmc-global.org</a></p><p>الاعتماد العالمي للمستشارين. مع خبرتك في top 3 FMCG = مستشار جاهز.</p></div></div>
-  <div class="course-card"><div class="course-header"><div class="rank rank-n">16</div><div><h3>Toastmasters + Executive Presence</h3><div class="provider">Toastmasters / INSEAD</div></div></div><div class="course-body"><p><a href="https://www.toastmasters.org/" target="_blank">toastmasters.org</a></p><p>للوصول لـ Director+, تحتاج حضور تنفيذي. Toastmasters أسبوعي يعطيك التطبيق العملي.</p></div></div>
+  <div class="course-card">
+    <div class="course-header"><div class="rank rank-n">12</div><div><h3>Harvard Negotiation Mastery</h3><div class="provider">Harvard Business School Online</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://online.hbs.edu/courses/negotiation-mastery/" target="_blank">online.hbs.edu/negotiation</a></p>
+      <p>تتفاوض يومياً مع موردين ومصانع وعملاء. منهجية هارفارد تحولك من مفاوض جيد إلى مفاوض استراتيجي.</p>
+      <p><strong>المدة:</strong> ٨ أسابيع | <strong>التكلفة:</strong> ~$1,850 | أونلاين</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
+  </div>
+  <div class="course-card">
+    <div class="course-header"><div class="rank rank-n">13</div><div><h3>INSEAD Corporate Governance</h3><div class="provider">INSEAD</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.insead.edu/executive-education/corporate-governance" target="_blank">insead.edu/governance</a></p>
+      <p>يؤهلك لعضوية مجالس الإدارات. رؤية 2030 تطلب حوكمة قوية. أعضاء المجالس المؤهلون نادرون.</p>
+      <p><strong>المدة:</strong> ١-٢ أسبوع | <strong>التكلفة:</strong> ~€8,000-12,000</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
+  </div>
+  <div class="course-card">
+    <div class="course-header"><div class="rank rank-n">14</div><div><h3>Oxford Futures & Foresight</h3><div class="provider">Oxford Saïd Business School</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.sbs.ox.ac.uk/oxford-scenarios-programme" target="_blank">sbs.ox.ac.uk/scenarios</a></p>
+      <p>الدراسات المستقبلية — بناء سيناريوهات استراتيجية. ذكرت Strategic Planning في اهتماماتك.</p>
+      <p><strong>المدة:</strong> ٥ أيام | <strong>التكلفة:</strong> ~£6,500</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
+  </div>
+  <div class="course-card">
+    <div class="course-header"><div class="rank rank-n">15</div><div><h3>CMC — Certified Management Consultant</h3><div class="provider">ICMCI</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.cmc-global.org/" target="_blank">cmc-global.org</a></p>
+      <p>الاعتماد العالمي للمستشارين الإداريين. خبرتك في Nestlé + L'Oréal + Unilever = مستشار جاهز.</p>
+      <p><strong>المدة:</strong> ٣-٦ أشهر | <strong>التكلفة:</strong> حسب البلد</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
+  </div>
+  <div class="course-card">
+    <div class="course-header"><div class="rank rank-n">16</div><div><h3>Toastmasters + Executive Presence</h3><div class="provider">Toastmasters / INSEAD</div></div></div>
+    <div class="course-body">
+      <h4>🔗 الرابط</h4><p><a href="https://www.toastmasters.org/" target="_blank">toastmasters.org</a></p>
+      <p>للوصول لـ Director+ تحتاج حضور تنفيذي. Toastmasters يعطيك التطبيق العملي الأسبوعي.</p>
+      <p><strong>المدة:</strong> مستمر | <strong>التكلفة:</strong> ~$45/6 أشهر</p>
+    </div>
+    <div class="expand-hint">👆 اضغط للتوسيع</div>
+  </div>
 </div>
 
 <h2 class="section-title" id="roadmap"><span class="icon">🗺️</span> خارطة الطريق — ٣ سنوات</h2>
