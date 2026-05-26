@@ -13,6 +13,7 @@ nav a:hover{color:#00d4ff;background:rgba(0,212,255,0.06)}
 .container{max-width:1100px;margin:0 auto;padding:16px;position:relative;z-index:1}
 .hero{text-align:center;padding:60px 8px 40px;position:relative}
 .hero::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(600px,80vw);height:min(600px,80vw);background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);pointer-events:none}
+.hero-avatar{width:120px;height:120px;border-radius:50%;border:3px solid rgba(0,212,255,0.4);object-fit:cover;margin-bottom:16px;box-shadow:0 0 40px rgba(0,212,255,0.2)}
 .hero h1{font-size:clamp(28px,6vw,52px);font-weight:900;background:linear-gradient(135deg,#fff 30%,#00d4ff 70%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
 .hero .sub{font-size:clamp(15px,2.5vw,20px);color:#8888a0;max-width:650px;margin:0 auto 20px;padding:0 12px}
 .hero .badge-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
@@ -39,7 +40,6 @@ nav a:hover{color:#00d4ff;background:rgba(0,212,255,0.06)}
 .course-card.open .course-body{max-height:none;padding:20px;overflow:visible}
 .course-body h4{font-size:15px;color:#00d4ff;margin:12px 0 5px}
 .course-body p,.course-body li{font-size:14px;color:#a0a0b8;line-height:1.8}
-.course-body li{margin-bottom:4px;list-style:'▸ ';padding-right:6px}
 .course-body a{color:#00d4ff;text-decoration:underline;text-underline-offset:3px}
 .course-body a:hover{color:#fff}
 .expand-hint{text-align:center;color:#8888a0;font-size:12px;padding:6px 20px 12px}
@@ -67,7 +67,12 @@ tbody tr:hover td{background:rgba(0,212,255,0.06)}
 <canvas class="particles" id="particles"></canvas>
 <nav><a href="#summary">الملخص</a><a href="#timeline">📅 المسار</a><a href="#priorities">🥇 الأولويات</a><a href="#supplychain">📦 سلاسل إمداد</a><a href="#techdata">📊 تقنية وبيانات</a><a href="#beyond">🌍 خارج الصندوق</a><a href="#soft">🎤 مهارات</a><a href="#roadmap">🗺️ خارطة ٣ سنوات</a></nav>
 <div class="container">
-<div class="hero"><h1>وليد زيدان، ماجستير</h1><div class="sub">Demand & Supply Planning Manager — Nestlé Nespresso<br>خارطة تطوير مهني • شهادات • دورات • مستقبل</div><div class="badge-row"><span class="badge">🏭 6+ سنوات FMCG</span><span class="badge">📦 Supply Chain</span><span class="badge">🎓 MSc Engineering Management</span><span class="badge">🇸🇦 Saudi Renaissance</span></div></div>
+<div class="hero">
+  <img class="hero-avatar" src="waleed.jpg" alt="وليد زيدان" loading="lazy">
+  <h1>وليد زيدان، ماجستير</h1>
+  <div class="sub">Demand & Supply Planning Manager — Nestlé Nespresso<br>خارطة تطوير مهني • شهادات • دورات • مستقبل</div>
+  <div class="badge-row"><span class="badge">🏭 6+ سنوات FMCG</span><span class="badge">📦 Supply Chain</span><span class="badge">🎓 MSc Engineering Management</span><span class="badge">🇸🇦 Saudi Renaissance</span></div>
+</div>
 <div class="summary-card pulse" id="summary"><h3>🧬 أين أنت الآن — وأين تقدر توصل</h3><p>وليد، أنت في <strong>منطقة قوة نادرة</strong>: خبرة multinational في Nestlé و L'Oréal و Unilever، مع ماجستير في الإدارة الهندسية. الـ gap مش في الخبرة — الـ gap في <strong>الاعتماد الرسمي</strong> لهذي الخبرة. الشهادات اللي تحت بتنقلك من <strong style="color:#00d4ff">Manager</strong> إلى <strong style="color:#ffd700">Director/VP</strong> خلال ٢-٣ سنوات.</p></div>
 
 <h2 class="section-title" id="timeline"><span class="icon">📅</span> المسار المهني</h2>
